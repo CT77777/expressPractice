@@ -1,0 +1,11 @@
+extends layout.pug
+
+block title
+    title Hello 
+
+block content
+    section
+        form(action="/Hello", method="post")
+            label Please enter your address:
+                input(type="text", placeholder="input your address", name="address")
+            button(type="submit") Submit

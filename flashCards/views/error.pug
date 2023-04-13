@@ -1,0 +1,7 @@
+extends layout.pug 
+
+block content 
+    section
+        h1 error message: #{error.message}
+        h2 error code: #{error.status}
+        p #{error.stack}

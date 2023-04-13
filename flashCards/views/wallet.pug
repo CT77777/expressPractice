@@ -1,0 +1,13 @@
+extends layout.pug
+
+block title 
+    title Connect Wallet
+
+block content
+    section#content
+        h2(title= `Chosen wallet is ${wallet} `+ balance)= wallet
+        p
+            if balance
+                i Balance: #{balance}
+            else
+                i error

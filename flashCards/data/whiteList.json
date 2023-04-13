@@ -1,0 +1,32 @@
+{
+  "data": {
+    "title": "JavaScript WhiteList",
+    "list": [
+      {
+        "wallet": "0xac8...",
+        "name": "CT",
+        "balance": 700
+      },
+      {
+        "wallet": "0xf38...",
+        "name": "Aaron",
+        "balance": 500
+      },
+      {
+        "wallet": "0xcd3...",
+        "name": "Shawn",
+        "balance": 379
+      },
+      {
+        "wallet": "0xe79...",
+        "name": "Sharon",
+        "balance": 653
+      },
+      {
+        "wallet": "0xb33...",
+        "name": "Randy",
+        "balance": 135
+      }
+    ]
+  }
+}

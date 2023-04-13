@@ -1,0 +1,28 @@
+extends layout.pug
+
+block title 
+    title White List
+
+block content
+    section 
+        h2 White List
+        table
+            thead
+                tr
+                    th Wallet
+                    th Name
+            tbody
+                each whitelist in whiteListAddress
+                    tr
+                        td  #{whitelist.wallet}
+                        td  #{whitelist.name}
+        h3 Each balance
+        p  Wallet or Name: #{text}
+        if balance
+            p  Balance: #{balance}
+            a(href=`${id}?side=name`) Show Name
+        else
+            a(href=`${id}?side=wallet`) Show Wallet
+        br
+        br
+        a(href=`/whitelist`) Randomize
