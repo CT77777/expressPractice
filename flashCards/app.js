@@ -7,6 +7,7 @@ app.use(express.urlencoded());
 app.use(cookieParser());
 app.use("/static", express.static("public"));
 
+// use the pug template
 app.set("view engine", "pug");
 
 const mainRoute = require("./routes/mainRoute.js");
@@ -28,6 +29,6 @@ app.use((err, req, res, next) => {
   res.render("error", { error: err });
 });
 
-app.listen(3000, () => {
-  console.log(`you're running localhost:3000.`);
+app.listen(3001, () => {
+  console.log(`you're running localhost:3001.`);
 });

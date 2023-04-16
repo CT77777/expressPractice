@@ -12,7 +12,7 @@ const whiteListAddress = [
 ];
 
 router.get("/:id", (req, res) => {
-  const { side } = req.query;
+  const { side } = req.query; // equal to "const side = req.query.side"
   const { id } = req.params;
   const text = list[id][side];
   const { balance } = list[id];
